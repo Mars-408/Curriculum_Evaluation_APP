@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring: #配置druid连接池
+  datasource:  #数据源(连接池)
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver  #驱动
+      url: jdbc:mysql://39.102.76.225:3306/example?characterEncoding=utf8&serverTimezone=Asia/Shanghai #数据建库链接
+      username: root
+      password: 20010919aA(
+      max-active: 20 #数据库最大连接数
+      max-wait: 6000 #最大等待时间（超时连接）
+      min-idle: 1 #最小的一个空闲连接：1个
+      test-on-borrow: true #检测连接是否有效
+      test-on-return: true #连接有效就放进连接池，无效就直接废弃
+mybatis:
+  mapper-locations: classpath*:com/example/mapper/*Mapper.xml #与sql相关的文件,以xxxMapper.xml结尾，注意该目录必须一个一个创建
+  config-location: classpath:mybatis-config.xml
+

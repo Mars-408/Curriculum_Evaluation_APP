@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script crossorigin="anonymous"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/qieh.js"></script>
+    <title>主页</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+		.zhezhao{
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			background: #000;
+			width: 100%;
+			height: 100%;
+			opacity: 0.5;
+		}
+		.tankuang{
+			position: relative;
+			background: #fff;
+			width: 50%;
+			height: 80%;
+			border-radius: 5px;
+			margin: 5% auto;
+		}
+		#header{
+			height: 40px;
+		}
+		#header-right{
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			border-radius: 5px;
+			background: red;
+			color: #fff;
+			right: 5px;
+			top: 5px;
+			text-align: center;
+		}
+	</style>
+	
+	
+</head>
+<body>
+
+<div id="wrap">
+    <div id="top">
+        <div id="logo">
+            <img class="logo"
+              src="img/png/logo.png">
+            <p></p>
+            <div class="type-js headline">
+                <h1 >Welcome</h1>
+            </div>
+			<p></p>
+			<p></p>
+
+        </div>
+    </div>
+    <div id="main">
+        <div class="app animated fadeInLeft" id="app">
+            <ul>
+                <li>
+                    <a href="../StudentInfoManager/index.html" target="_blank">
+                        <img class="shake" src="img/png/info.png"/>
+                        <strong>用户信息</strong></a>
+                </li>
+                <li>
+                    <a href="../DBIN/DBIN.html">
+                        <img class="shake" src="img/png/in.png"/>
+                        <strong>学生课表导入</strong></a>
+                </li>
+				
+				<li >
+				    <a href="../Download/Download.html" target="_blank">
+				        <img class="shake" src="img/png/out.png"/>
+				        <strong>评价内容导出</strong></a>
+				</li>
+				
+				
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+</body>
+</html>

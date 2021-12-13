@@ -1,0 +1,2 @@
+IDEA控制台
+mvn clean install -Dmaven.test.skip

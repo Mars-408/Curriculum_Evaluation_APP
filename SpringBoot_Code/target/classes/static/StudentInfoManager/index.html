@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="js/Main.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	  
+	  //模拟一段JSON数据，实际要从数据库中读取
+	  var per = [
+{name:"张发河",username:13004048588,email:"268039922@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"于增彪",username:13083033081,email:"6415065850@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"蔡俊兰",username:13093647806,email:"6994269398@163.com",role:"教师",academy:"物理与电子信息学院",time:"2021/4/16"},
+{name:"刘长莲",username:13329148890,email:"9018981206@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"兰京",username:13349039802,email:"3467430760@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"凌紫霄",username:13615538993,email:"9199556018@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"尤东敏",username:13655535327,email:"224494684@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"董永强",username:14572237709,email:"9520130338@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"严卢庆",username:14582681496,email:"4153698893@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"柯珍珍",username:14790152430,email:"7323461254@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"栾娜娜",username:15055332594,email:"2421421341@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"吕德斌",username:15056455247,email:"6011848997@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"顾惠红",username:15178555252,email:"9393821721@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"田梦媛",username:15205538572,email:"6743726729@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"林晓佩",username:15212214719,email:"6972488120@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"苏春敏",username:15212255769,email:"7135236295@163.com",role:"教师",academy:"体育学院",time:"2021/4/16"},
+{name:"林浩然",username:15255388621,email:"3358070645@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"杨辉",username:15357026849,email:"401391828@163.com",role:"教师",academy:"教育科学院",time:"2021/4/16"},
+{name:"何明阳",username:15375116895,email:"73386309@163.com",role:"教师",academy:"物理与电子信息学院",time:"2021/4/16"},
+{name:"王勇浩",username:15505658305,email:"8582499915@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"梁恒贵",username:15551244718,email:"1625849218@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"常月娥",username:15556355864,email:"1129311505@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"温世德",username:15755332993,email:"881338088@163.com",role:"教师",academy:"教育科学院",time:"2021/4/16"},
+{name:"蒋洪胜",username:15755343095,email:"2400273947@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"李海萌",username:16655393513,email:"2717580186@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"李玉琦",username:17120079804,email:"4128539342@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"郭东雪",username:17509631127,email:"8286404746@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"刘海怡",username:17655037157,email:"158285753@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"马利",username:17682112946,email:"4980031995@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"姜剑华",username:17729911750,email:"1074193267@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"高翠云",username:17755385388,email:"4682849267@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"陈家池",username:17756501765,email:"9154611072@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"魏秀丽",username:17775282417,email:"5205270346@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"刘艳娥",username:17855358724,email:"1242069246@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"武卫",username:17855392556,email:"9171348077@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"阎珍珍",username:17856693245,email:"8273746840@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"陆浩龙",username:17856907267,email:"436302881@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"李道忠",username:17884315911,email:"7399780924@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"王汉臣",username:18005534287,email:"4110310243@163.com",role:"教师",academy:"教育科学院",time:"2021/4/16"},
+{name:"张瑞怡",username:18010745262,email:"7522524439@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"梅惠子",username:18055368229,email:"6725489214@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"倪鹏飞",username:18098625102,email:"7673724285@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"吕爱莉",username:18155335472,email:"4260805189@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"马宝林",username:18155382896,email:"7539162063@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"彭国柱",username:18156585839,email:"1413628571@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"义言",username:18196529881,email:"2347743528@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"边卫华",username:18255391882,email:"1192018912@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"王学明",username:18315348265,email:"4584211294@163.com",role:"教师",academy:"体育学院",time:"2021/4/16"},
+{name:"李木辉",username:18356556075,email:"1944306473@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"胡锡平",username:18356594231,email:"2720780173@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"冷牧",username:18375337294,email:"2849125786@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"于大龙",username:18430129273,email:"5336895240@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"许凤明",username:18455387764,email:"6566664266@163.com",role:"教师",academy:"体育学院",time:"2021/4/16"},
+{name:"丰超",username:18555139273,email:"6824717817@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"田春元",username:18555331988,email:"1013886354@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"梁慧慧",username:18555369343,email:"6603644640@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"王永朝",username:18555536191,email:"3450782970@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"颜廷瑞",username:18609638289,email:"1165787085@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"李新桂",username:18655316681,email:"4354356875@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"隋成龙",username:18655344958,email:"4770384732@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"程如良",username:18755311795,email:"4650618900@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"韩新文",username:18755341121,email:"6684079469@163.com",role:"教师",academy:"化学与材料科学学院",time:"2021/4/16"},
+{name:"申曼",username:18855363505,email:"8320637642@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"王琇莹",username:18855383303,email:"2672019207@163.com",role:"教师",academy:"外国语学院",time:"2021/4/16"},
+{name:"马芝琴",username:18855397181,email:"3781156295@163.com",role:"教师",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"鲁野",username:18895326205,email:"9756395598@163.com",role:"教师",academy:"体育学院",time:"2021/4/16"},
+{name:"崔子格",username:18949426801,email:"1435168649@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"黄荣兵",username:18949506245,email:"3753556097@163.com",role:"教师",academy:"体育学院",time:"2021/4/16"},
+{name:"洪曼曼",username:18955392980,email:"3754095607@163.com",role:"教师",academy:"体育学院",time:"2021/4/16"},
+{name:"宿卫",username:19855319902,email:"6369349663@163.com",role:"教师",academy:"教育科学院",time:"2021/4/16"},
+{name:"万乐乐",username:19944511271,email:"7495250561@163.com",role:"教师",academy:"数学与统计学院",time:"2021/4/16"},
+{name:"李果红",username:19955365664,email:"9316374283@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"蓝志勇",username:19965322361,email:"7820411257@163.com",role:"教师",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"冯慧卿",username:13162772139,email:"8320637642@163.com",role:"教师",academy:"文学院",time:"2021/4/16"},
+{name:"邱东升",username:14592933988,email:"2672019207@163.com",role:"教师",academy:"法学院",time:"2021/4/16"},
+{name:"刘权章",username:13785405250,email:"3781156295@163.com",role:"教师",academy:"经济管理学院",time:"2021/4/16"},
+{name:"方强强",username:15566501238,email:"9756395598@163.com",role:"教师",academy:"音乐学院",time:"2021/4/16"},
+{name:"魏传强",username:13089302934,email:"1435168649@163.com",role:"教师",academy:"美术学院",time:"2021/4/16"},
+{name:"郭文景",username:13068532159,email:"3753556097@163.com",role:"教师",academy:"历史学院",time:"2021/4/16"},
+{name:"彭秋花",username:18978707070,email:"3754095607@163.com",role:"教师",academy:"新闻与传播学院",time:"2021/4/16"},
+{name:"伍烨",username:19978864096,email:"6369349663@163.com",role:"教师",academy:"地理与旅游学院",time:"2021/4/16"},
+{name:"涂远谋",username:15634456985,email:"7495250561@163.com",role:"教师",academy:"生命科学学院",time:"2021/4/16"},
+{name:"陈明孝",username:13945544973,email:"9316374283@163.com",role:"教师",academy:"生态与环境学院",time:"2021/4/16"},
+{name:"张敦",username:18267968399,email:"7820411257@163.com",role:"教师",academy:"国际教育学院",time:"2021/4/16"},
+{name:"张鹏",username:19956790001,email:"3753556097@163.com",role:"学生",academy:"外国语学院",time:"2021/4/16"},
+{name:"李明",username:19956790002,email:"3754095607@163.com",role:"学生",academy:"计算机与信息学院",time:"2021/4/16"},
+{name:"王琦",username:19956790003,email:"6369349663@163.com",role:"学生",academy:"体育学院",time:"2021/4/16"},
+{name:"马武氏",username:19956790004,email:"7495250561@163.com",role:"学生",academy:"马克思主义学院",time:"2021/4/16"},
+{name:"张启",username:19956790005,email:"9316374283@163.com",role:"学生",academy:"体育学院",time:"2021/4/16"},
+{name:"李子海",username:19956790006,email:"7820411257@163.com",role:"学生",academy:"体育学院",time:"2021/4/16"},
+{name:"梅文栋",username:19856780003,email:"2849125786@163.com",role:"校督导员",academy:"安徽师范大学",time:"2021/4/16"},
+{name:"蔚德辉",username:19856780004,email:"5336895240@163.com",role:"院督导员",academy:"计算机与信息学院",time:"2021/4/16"},
+
+];
+	  
+	  window.onload = function(){
+		  var tbody = document.getElementById('myTable');
+		  
+		  for(var i = 0;i < per.length; i++){ //遍历一下json数据
+			  var trow = getDataRow(per[i]); //定义一个方法,返回tr数据
+		  	  tbody.appendChild(trow);
+			}
+		  
+		  }
+		  
+	  function getDataRow(h){
+		 var row = document.createElement('tr'); //创建行
+		 
+		 var idCell = document.createElement('td'); //创建第一列id
+		 idCell.innerHTML = h.name; //填充数据
+		 row.appendChild(idCell); //加入行  ，下面类似
+		 
+		 var nameCell = document.createElement('td');//创建第二列name
+		 nameCell.innerHTML = h.username;
+		 row.appendChild(nameCell);
+		 
+		 var emailCell = document.createElement('td');//创建第三列job
+		 emailCell.innerHTML = h.email;
+		 row.appendChild(emailCell);
+		 
+		 var roleCell = document.createElement('td'); //创建第一列id
+		 roleCell.innerHTML = h.role; //填充数据
+		 row.appendChild(roleCell); //加入行  ，下面类似
+		 
+		 var academyCell = document.createElement('td');//创建第二列name
+		 academyCell.innerHTML = h.academy;
+		 row.appendChild(academyCell);
+		 
+		 var timeCell = document.createElement('td');//创建第三列job
+		 timeCell.innerHTML = h.time;
+		 row.appendChild(timeCell);
+		 
+		 //到这里，json中的数据已经添加到表格中，下面为每行末尾添加删除按钮
+		 
+		
+		 
+		 
+		 return row; //返回tr数据	 
+		 }	  
+	</script>
+</head>
+
+<body onkeypress="enter()">
+	
+	
+<div id="total">
+<center><h2>高校师生听评课系统——用户信息</h2></center>
+   
+<center>
+	<div id="main">
+	    <table width="800" border="1" cellspacing="0">
+	        <thead>
+	           <tr>
+	              <th class="col1">姓名</th>
+	              <th class="col2">用户名</th>
+	              <th class="col3">邮箱</th>
+	              <th class="col4">身份</th>
+				  <th class="col5">学院</th>
+				  <th class="col6">注册时间</th>
+	           </tr> 
+	        </thead>
+	        <tbody id="myTable"></tbody>
+	     </table>
+	</div>
+</center>
+    
+
+</div>
+
+
+</body>
+</html>

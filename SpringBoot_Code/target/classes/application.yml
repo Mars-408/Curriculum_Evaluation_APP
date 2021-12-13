@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev
+
+jdbc: #自定义属性
+  url: http://localhost:3306
+
+
+
+
