@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.myapplication.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_scoreStuAnalyse"
+            app:destination="@id/scoreStuAnalyse" />
+        <action
+            android:id="@+id/action_navigation_home_to_scoreLeaderAnalyse"
+            app:destination="@id/scoreLeaderAnalyse" />
+        <action
+            android:id="@+id/action_navigation_home_to_commentStu"
+            app:destination="@id/commentStu" />
+        <action
+            android:id="@+id/action_navigation_home_to_commentLeader"
+            app:destination="@id/commentLeader" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.myapplication.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <activity
+        android:id="@+id/commentLeader"
+        android:name="com.example.myapplication.ui.CommentLeader.CommentLeader"
+        android:label="activity_comment_leader"
+        tools:layout="@layout/activity_comment_leader" />
+    <activity
+        android:id="@+id/commentStu"
+        android:name="com.example.myapplication.ui.CommentStu.CommentStu"
+        android:label="activity_comment_stu"
+        tools:layout="@layout/activity_comment_stu" />
+    <activity
+        android:id="@+id/scoreLeaderAnalyse"
+        android:name="com.example.myapplication.ui.ScoreLeader.ScoreLeaderAnalyse"
+        android:label="activity_score_leader_analyse"
+        tools:layout="@layout/activity_score_leader_analyse" />
+    <activity
+        android:id="@+id/scoreStuAnalyse"
+        android:name="com.example.myapplication.ui.ScoreStu.ScoreStuAnalyse"
+        android:label="activity_score_stu_analyse"
+        tools:layout="@layout/activity_score_stu_analyse" />
+</navigation>

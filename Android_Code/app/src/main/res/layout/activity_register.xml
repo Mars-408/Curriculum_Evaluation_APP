@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_register"
+    tools:context=".startUI.RegisterActivity">
+
+    <!--自定义的下划线EditText-->
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edit_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/shape"
+        android:text="注册"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/edit_code"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="125dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="你的手机号" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/edit_code"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="177dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="设置密码(请输入6位数字)" />
+
+    <EditText
+        android:id="@+id/edit_confirm_password"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/edit_code"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="224dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="确认密码(请输入6位数字)" />
+
+    <EditText
+        android:id="@+id/edit_code"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edit_phone"
+        android:layout_alignStart="@+id/btn_register"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="230dp"
+        android:ems="10"
+        android:hint="请输入验证码" />
+
+    <Button
+        android:id="@+id/btn_getcode"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/edit_code"
+        android:layout_alignEnd="@+id/edit_phone"
+        android:layout_alignBottom="@+id/edit_code"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/roleRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_alignStart="@+id/btn_register"
+        android:layout_alignTop="@+id/edit_email"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="206dp">
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="学生"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="教师"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_email"
+        android:layout_alignEnd="@+id/btn_getcode"
+        android:layout_alignBottom="@+id/btn_register"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="157dp"
+        android:spinnerMode="dialog"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/edit_email"
+        android:layout_alignBottom="@+id/edit_email"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="姓名" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/edit_phone"
+        android:layout_alignBottom="@+id/edit_phone"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="你的邮箱"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sp"
+        android:layout_alignBottom="@+id/btn_register"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="133dp"
+        android:text="听课任务："
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView1"
+        android:layout_alignBottom="@+id/sp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="-238dp"
+        android:layout_marginBottom="-24dp" />
+
+</RelativeLayout>

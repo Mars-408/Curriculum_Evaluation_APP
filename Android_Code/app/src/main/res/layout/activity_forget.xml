@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_register"
+    tools:context=".startUI.ForgetActivity">
+
+    <Button
+        android:background="@drawable/shape"
+        android:text="找回密码"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_find"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/edit_code"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="你的手机号"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/edit_phone"
+        android:layout_weight="1"
+        android:layout_marginTop="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edit_code" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="新密码(请输入6位数字)"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/edit_password"
+        android:layout_weight="1"
+        android:layout_marginTop="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edit_code" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="确认新密码(请输入6位数字)"
+        android:textSize="15sp"
+        android:ems="10"
+        android:id="@+id/edit_confirm_password"
+        android:layout_weight="1"
+        android:layout_marginTop="214dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edit_code" />
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:hint="请输入验证码"
+        android:textSize="15sp"
+        android:ems="10"
+        android:layout_marginTop="180dp"
+        android:id="@+id/edit_code"
+        android:layout_below="@+id/edit_phone"
+        android:layout_alignStart="@+id/btn_find" />
+
+    <Button
+        android:text="获取验证码"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:id="@+id/btn_getcode"
+        android:background="@drawable/shape"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/edit_code"
+        android:layout_alignBottom="@+id/edit_code"
+        android:layout_alignEnd="@+id/edit_phone" />
+
+</RelativeLayout>

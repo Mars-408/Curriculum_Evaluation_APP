@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">听评课系统</string>
+    <string-array name="academy">
+        <item>全校</item>
+        <item>文学院</item>
+        <item>马克思主义学院</item>
+        <item>法学院</item>
+        <item>经济管理学院</item>
+        <item>音乐学院</item>
+        <item>美术学院</item>
+        <item>历史学院</item>
+        <item>教育科学学院</item>
+        <item>外国语学院</item>
+        <item>体育学院</item>
+        <item>新闻与传播学院</item>
+        <item>数学与统计学院</item>
+        <item>计算机与信息学院</item>
+        <item>物理与电子信息学院</item>
+        <item>化学与材料科学学院</item>
+        <item>地理与旅游学院</item>
+        <item>生命科学学院</item>
+        <item>生态与环境学院</item>
+        <item>国际教育学院</item>
+    </string-array>
+    <string name="title_activity_bottom_navigation_view">MainActivity</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">任务</string>
+    <string name="title_dashboard2">评价</string>
+    <string name="title_dashboard3">任务</string>
+    <string name="title_notifications">个人信息</string>
+    <!--以下为 网络请求的URL-->
+    <string name="CommentLeader_GetList">http://39.102.76.225:8888/portal/teachercourse/MyCourse.do</string>
+    <string name="CommentStu_GetList">http://39.102.76.225:8888/portal/schedule/Getcourseidbyteacherid.do</string>
+    <string name="Dashboard_GetList_1">http://39.102.76.225:8888/portal/teachercourse/getcourselist.do</string>
+    <string name="Dashboard_GetList_2_Stu">http://39.102.76.225:8888/portal/stuevaluation/getcourselist.do</string>
+    <string name="Dashboard_GetList_3">http://39.102.76.225:8888/portal/teachercourse/getcourselist.do</string>
+    <string name="General_Comment_GetStu">http://39.102.76.225:8888/portal/stuevaluation/gainbycourseid.do</string>
+    <string name="General_Comment_GetTea">http://39.102.76.225:8888/portal/TeaEvaluation/GainComment.do"</string>
+    <string name="Display_Proof">http://39.102.76.225:8888/portal/TeaEvaluation/GainTeaProofUrl.do</string>
+    <string name="General_Score_GetStu">http://39.102.76.225:8888/portal/calculate/teacherget.do</string>
+    <string name="General_Score_GetTea">http://39.102.76.225:8888/portal/calculate/teachergetleader.do</string>
+    <string name="Check_Ranking">http://39.102.76.225:8888/portal/calculate/leaderget.do</string>
+    <string name="Score_Leader">http://39.102.76.225:8888/portal/teachercourse/MyCourse.do</string>
+    <string name="Score_Stu">http://39.102.76.225:8888/portal/schedule/Getcourseidbyteacherid.do</string>
+    <string name="Get_All_Proof_List">http://39.102.76.225:8888/portal/TeaEvaluation/GainAllTeaProof.do</string>
+    <string name="Get_Proof_List">http://39.102.76.225:8888/portal/TeaEvaluation/GainTeaProof.do</string>
+    <string name="Login">http://39.102.76.225:8888/portal/user/login.do</string>
+
+    <string name="URL_Course_Tea">http://39.102.76.225:8888/portal/teachercourse/getallname.do</string>
+    <string name="URL_Course_Stu">http://39.102.76.225:8888/portal/schedule/ByAcademyname.do</string>
+    <string name="URL_Teacher_Tea">http://39.102.76.225:8888/portal/teachercourse/getteacherbycourse.do</string>
+    <string name="URL_Teacher_Stu">http://39.102.76.225:8888/portal/schedule/ByCourse.do</string>
+    <string name="URL_Detail">http://39.102.76.225:8888/portal/teachercourse/getdetail.do</string>
+    <string name="Send_Mail">http://39.102.76.225:8888/portal/teachercourse/addlist.do</string>
+
+    <string name="Write_Diary">http://39.102.76.225:8888/portal/TeaEvaluation/submit.do</string>
+    <string name="Submit_Sut_Diary">http://39.102.76.225:8888/portal/stuevaluation/submit.do</string>
+
+    <string name="Register">http://39.102.76.225:8888/portal/user/register.do"</string>
+    <string name="ForgetActivity">http://39.102.76.225:8888/portal/user/resetPassword.do</string>
+
+</resources>

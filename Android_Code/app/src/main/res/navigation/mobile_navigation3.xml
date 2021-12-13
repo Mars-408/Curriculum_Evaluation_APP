@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home3">
+
+    <fragment
+        android:id="@+id/navigation_home3"
+        android:name="com.example.myapplication.ui.home3.HomeFragment3"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home3" >
+        <action
+            android:id="@+id/action_navigation_home3_to_check_Raning_Leader"
+            app:destination="@id/check_Raning_Leader" />
+        <action
+            android:id="@+id/action_navigation_home3_to_selectTeaProofActivity"
+            app:destination="@id/selectTeaProofActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard3"
+        android:name="com.example.myapplication.ui.dashboard3.DashboardFragment3"
+        android:label="@string/title_dashboard3"
+        tools:layout="@layout/fragment_dashboard3" />
+
+    <fragment
+        android:id="@+id/navigation_notifications3"
+        android:name="com.example.myapplication.ui.notifications3.NotificationsFragment3"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications3" />
+    <activity
+        android:id="@+id/check_Raning_Leader"
+        android:name="com.example.myapplication.ui.Ranking_leaderUse.Check_Raning_Leader"
+        android:label="Check_Raning_Leader" />
+    <activity
+        android:id="@+id/selectTeaProofActivity"
+        android:name="com.example.myapplication.ui.TeacherProof.SelectTeaProofActivity"
+        android:label="activity_select_tea_proof"
+        tools:layout="@layout/activity_select_tea_proof" />
+
+</navigation>

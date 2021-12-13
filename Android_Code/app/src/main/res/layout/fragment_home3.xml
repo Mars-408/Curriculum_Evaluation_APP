@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home3.HomeFragment3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="#FF6347"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/gongneng"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="时事新闻"
+            android:textColor="#595959"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/RLay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon1"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#a000"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/aaa"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_item_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_icon1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="省委对我校领导班子和校级领导干部进行2020年度综合考核"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_date1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_title1"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_icon1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="2021-4-21 20:23"
+                    android:textColor="#8000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RLay1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#a000"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bbb" />
+
+                <TextView
+                    android:id="@+id/tv_item_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_icon2"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="我校应邀出席安徽省民办学校名校联盟成立大会"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_date2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_title2"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_icon2"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="2021-4-20 23:23"
+                    android:textColor="#8000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RLay2"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon3"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#a000"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ccc" />
+
+                <TextView
+                    android:id="@+id/tv_item_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_icon3"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="《中国教育报》头版头条报道我校马克思主义新闻观人才培养模式"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_date3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_title3"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_icon3"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="2021-4-19 22:02"
+                    android:textColor="#8000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLay3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon4"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#a000"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ddd" />
+
+                <TextView
+                    android:id="@+id/tv_item_title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_icon4"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="我校参加省属高校党员干部学习贯彻习近平总书记关于家庭家教家风建设重要论述座谈会"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_date4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_title4"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_icon4"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="2021-4-18 15:03"
+                    android:textColor="#8000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLay5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLay4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon5"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#a000"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/eee" />
+
+                <TextView
+                    android:id="@+id/tv_item_title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_icon5"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="学校召开理工科学院科技创新工作推进会"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_date5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_title5"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv_icon5"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="2021-4-17 21:20"
+                    android:textColor="#8000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RLay6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RLay5"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon6"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#a000"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fff" />
+
+                <TextView
+                    android:id="@+id/tv_item_title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/iv_icon6"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="我校组织各民族学生赴新四军七师纪念馆开展“学党史'教育实践活动"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_date6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_item_title6"
+                    android:layout_toRightOf="@+id/iv_icon6"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="2021-4-16 14:23"
+                    android:textColor="#8000"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片标题"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/page_indicator_focused" />
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/page_indicator" />
+
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/page_indicator" />
+
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/page_indicator" />
+
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/page_indicator" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/gongneng"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/back_register">
+
+        <LinearLayout
+            android:id="@+id/toproof"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/five" />
+
+            <TextView
+                android:id="@+id/one_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="听课凭据"
+                android:textColor="#595959"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toranking"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:id="@+id/four"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/six" />
+
+            <TextView
+                android:id="@+id/four_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="老师排名"
+                android:textColor="#595959"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

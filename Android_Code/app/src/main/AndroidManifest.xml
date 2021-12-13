@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 允许程序设置内置sd卡的写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许程序访问WiFi网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.mob.MobApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.WriteDiary_StuActivity.Stu_SriteDiary"
+                  android:label="评价">
+        </activity>
+        <activity android:name=".startUI.Temp_UI">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.DisScoreAnalyseFromStu.GeneralScoreDisplay"
+            android:label="评分数据分析" />
+        <activity
+            android:name=".ui.DisplayComment.GeneralCommentDisplay"
+            android:label="评语详情" />
+        <activity
+            android:name=".ui.ScoreStu.ScoreStuAnalyse"
+            android:label="学生评分数据" />
+        <activity
+            android:name=".ui.ScoreLeader.ScoreLeaderAnalyse"
+            android:label="专业评分数据" />
+        <activity
+            android:name=".ui.CommentStu.CommentStu"
+            android:label="学生评语" />
+        <activity
+            android:name=".ui.CommentLeader.CommentLeader"
+            android:label="专业评语" />
+        <activity
+            android:name=".SelectActivity"
+            android:label="添加课程" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="登录"></activity>
+        <activity android:name=".SelectAlbumActivity" />
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".WriteDiaryActivity"
+            android:label="评价" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".BottomMenuActivity"
+            android:label="@string/title_activity_bottom_navigation_view" />
+        <activity
+            android:name=".startUI.RegisterActivity"
+            android:label="新用户注册" />
+        <activity
+            android:name=".startUI.ForgetActivity"
+            android:label="忘记密码" />
+        <activity android:name=".BottomMenuActivity2" />
+        <activity android:name=".BottomMenuActivity3" />
+        <activity
+            android:name=".ui.Ranking_leaderUse.Check_Raning_Leader"
+            android:label="老师排名" />
+        <activity
+            android:name=".ui.TeacherProof.SelectTeaProofActivity"
+            android:label="听课凭据" />
+        <activity
+            android:name=".ui.DisplayTeaProof.DisplayProofActivity"
+            android:label="听课凭据" />
+
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2e3d1254402dc" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="b6ffeeee15fbcae9511c8f16889ffa65" />
+    </application>
+
+</manifest>

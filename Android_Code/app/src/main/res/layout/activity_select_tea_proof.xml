@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.TeacherProof.SelectTeaProofActivity">
+    
+    <!-- 定义学院信息下拉菜单-->
+    <Spinner
+        android:id = "@+id/Spinner_academy"
+        android:textColor="#808080"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:spinnerMode="dialog"
+        >
+    </Spinner >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_teaProof"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

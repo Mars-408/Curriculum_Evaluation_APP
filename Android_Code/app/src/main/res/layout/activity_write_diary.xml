@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back_register"
+    android:layout_width="match_parent"
+    android:id="@+id/LL"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WriteDiaryActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TextView_01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="教师评价"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll2">
+
+        <TextView
+            android:id="@+id/part1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="一级指标" />
+
+        <TextView
+            android:id="@+id/part2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="评价号" />
+
+        <TextView
+            android:id="@+id/part4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="最高分" />
+
+        <TextView
+            android:id="@+id/part5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:gravity="center_horizontal"
+            android:text="评分" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll3">
+
+        <Button
+            android:id="@+id/part21"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="教学态度"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/part22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/part24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15" />
+
+        <EditText
+            android:id="@+id/part25"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll4">
+
+        <Button
+            android:id="@+id/part31"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="教学内容"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/part32"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/part34"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15" />
+
+        <EditText
+            android:id="@+id/part35"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll5">
+
+        <Button
+            android:id="@+id/part41"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="教学方法"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/part42"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/part44"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15" />
+
+        <EditText
+            android:id="@+id/part45"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/ll6"
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        tools:layout_editor_absoluteY="280dp">
+
+        <Button
+            android:id="@+id/part51"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="教学效果"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/part52"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/part54"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15" />
+
+        <EditText
+            android:id="@+id/part55"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll7">
+
+        <Button
+            android:id="@+id/part61"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="课堂情况"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/part62"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/part64"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="15" />
+
+        <EditText
+            android:id="@+id/part65"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll9"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll8">
+
+        <Button
+            android:id="@+id/part71"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="总体评价"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/part72"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/part74"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="25" />
+
+        <EditText
+            android:id="@+id/part75"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="1"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll10"
+        android:layout_width="match_parent"
+
+        android:layout_height="120dp"
+        android:layout_margin="0dp"
+        app:layout_constraintTop_toBottomOf="@id/ll9">
+
+        <EditText
+            android:id="@+id/part83"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:ems="5"
+            android:gravity="top"
+            android:inputType="textPersonName"
+            android:maxEms="100"
+            android:minLines="3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_weight="1"
+            android:text="提交评价" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_weight="6">
+
+
+
+            <GridView
+                android:id="@+id/gvSelectPic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:numColumns="3"
+                android:visibility="visible"
+                tools:layout_gravity="start" />
+            />
+
+        
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
